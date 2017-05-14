@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AD645D71EC7F8E2008506BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD645D61EC7F8E2008506BB /* main.m */; };
+		3AD645DA1EC7F8E2008506BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD645D91EC7F8E2008506BB /* AppDelegate.m */; };
+		3AD645DD1EC7F8E2008506BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD645DC1EC7F8E2008506BB /* ViewController.m */; };
+		3AD645E01EC7F8E2008506BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD645DE1EC7F8E2008506BB /* Main.storyboard */; };
+		3AD645E21EC7F8E2008506BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD645E11EC7F8E2008506BB /* Assets.xcassets */; };
+		3AD645E51EC7F8E2008506BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD645E31EC7F8E2008506BB /* LaunchScreen.storyboard */; };
+		3AD645F01EC7F8E3008506BB /* FYPDBManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD645EF1EC7F8E3008506BB /* FYPDBManagerTests.m */; };
+		3AD645FB1EC7F8E3008506BB /* FYPDBManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD645FA1EC7F8E3008506BB /* FYPDBManagerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AD645EC1EC7F8E3008506BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD645CA1EC7F8E2008506BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AD645D11EC7F8E2008506BB;
+			remoteInfo = FYPDBManager;
+		};
+		3AD645F71EC7F8E3008506BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD645CA1EC7F8E2008506BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AD645D11EC7F8E2008506BB;
+			remoteInfo = FYPDBManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AD645D21EC7F8E2008506BB /* FYPDBManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPDBManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD645D61EC7F8E2008506BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AD645D81EC7F8E2008506BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AD645D91EC7F8E2008506BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AD645DB1EC7F8E2008506BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3AD645DC1EC7F8E2008506BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3AD645DF1EC7F8E2008506BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AD645E11EC7F8E2008506BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AD645E41EC7F8E2008506BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AD645E61EC7F8E2008506BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD645EB1EC7F8E3008506BB /* FYPDBManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYPDBManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD645EF1EC7F8E3008506BB /* FYPDBManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPDBManagerTests.m; sourceTree = "<group>"; };
+		3AD645F11EC7F8E3008506BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD645F61EC7F8E3008506BB /* FYPDBManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYPDBManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD645FA1EC7F8E3008506BB /* FYPDBManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPDBManagerUITests.m; sourceTree = "<group>"; };
+		3AD645FC1EC7F8E3008506BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AD645CF1EC7F8E2008506BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD645E81EC7F8E3008506BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD645F31EC7F8E3008506BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AD645C91EC7F8E2008506BB = {
+			isa = PBXGroup;
+			children = (
+				3AD645D41EC7F8E2008506BB /* FYPDBManager */,
+				3AD645EE1EC7F8E3008506BB /* FYPDBManagerTests */,
+				3AD645F91EC7F8E3008506BB /* FYPDBManagerUITests */,
+				3AD645D31EC7F8E2008506BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AD645D31EC7F8E2008506BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AD645D21EC7F8E2008506BB /* FYPDBManager.app */,
+				3AD645EB1EC7F8E3008506BB /* FYPDBManagerTests.xctest */,
+				3AD645F61EC7F8E3008506BB /* FYPDBManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AD645D41EC7F8E2008506BB /* FYPDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				3AD645D81EC7F8E2008506BB /* AppDelegate.h */,
+				3AD645D91EC7F8E2008506BB /* AppDelegate.m */,
+				3AD645DB1EC7F8E2008506BB /* ViewController.h */,
+				3AD645DC1EC7F8E2008506BB /* ViewController.m */,
+				3AD645DE1EC7F8E2008506BB /* Main.storyboard */,
+				3AD645E11EC7F8E2008506BB /* Assets.xcassets */,
+				3AD645E31EC7F8E2008506BB /* LaunchScreen.storyboard */,
+				3AD645E61EC7F8E2008506BB /* Info.plist */,
+				3AD645D51EC7F8E2008506BB /* Supporting Files */,
+			);
+			path = FYPDBManager;
+			sourceTree = "<group>";
+		};
+		3AD645D51EC7F8E2008506BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AD645D61EC7F8E2008506BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AD645EE1EC7F8E3008506BB /* FYPDBManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AD645EF1EC7F8E3008506BB /* FYPDBManagerTests.m */,
+				3AD645F11EC7F8E3008506BB /* Info.plist */,
+			);
+			path = FYPDBManagerTests;
+			sourceTree = "<group>";
+		};
+		3AD645F91EC7F8E3008506BB /* FYPDBManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3AD645FA1EC7F8E3008506BB /* FYPDBManagerUITests.m */,
+				3AD645FC1EC7F8E3008506BB /* Info.plist */,
+			);
+			path = FYPDBManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AD645D11EC7F8E2008506BB /* FYPDBManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD645FF1EC7F8E3008506BB /* Build configuration list for PBXNativeTarget "FYPDBManager" */;
+			buildPhases = (
+				3AD645CE1EC7F8E2008506BB /* Sources */,
+				3AD645CF1EC7F8E2008506BB /* Frameworks */,
+				3AD645D01EC7F8E2008506BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FYPDBManager;
+			productName = FYPDBManager;
+			productReference = 3AD645D21EC7F8E2008506BB /* FYPDBManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AD645EA1EC7F8E3008506BB /* FYPDBManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD646021EC7F8E3008506BB /* Build configuration list for PBXNativeTarget "FYPDBManagerTests" */;
+			buildPhases = (
+				3AD645E71EC7F8E3008506BB /* Sources */,
+				3AD645E81EC7F8E3008506BB /* Frameworks */,
+				3AD645E91EC7F8E3008506BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AD645ED1EC7F8E3008506BB /* PBXTargetDependency */,
+			);
+			name = FYPDBManagerTests;
+			productName = FYPDBManagerTests;
+			productReference = 3AD645EB1EC7F8E3008506BB /* FYPDBManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3AD645F51EC7F8E3008506BB /* FYPDBManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD646051EC7F8E3008506BB /* Build configuration list for PBXNativeTarget "FYPDBManagerUITests" */;
+			buildPhases = (
+				3AD645F21EC7F8E3008506BB /* Sources */,
+				3AD645F31EC7F8E3008506BB /* Frameworks */,
+				3AD645F41EC7F8E3008506BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AD645F81EC7F8E3008506BB /* PBXTargetDependency */,
+			);
+			name = FYPDBManagerUITests;
+			productName = FYPDBManagerUITests;
+			productReference = 3AD645F61EC7F8E3008506BB /* FYPDBManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AD645CA1EC7F8E2008506BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = FYP;
+				TargetAttributes = {
+					3AD645D11EC7F8E2008506BB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					3AD645EA1EC7F8E3008506BB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3AD645D11EC7F8E2008506BB;
+					};
+					3AD645F51EC7F8E3008506BB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3AD645D11EC7F8E2008506BB;
+					};
+				};
+			};
+			buildConfigurationList = 3AD645CD1EC7F8E2008506BB /* Build configuration list for PBXProject "FYPDBManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AD645C91EC7F8E2008506BB;
+			productRefGroup = 3AD645D31EC7F8E2008506BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AD645D11EC7F8E2008506BB /* FYPDBManager */,
+				3AD645EA1EC7F8E3008506BB /* FYPDBManagerTests */,
+				3AD645F51EC7F8E3008506BB /* FYPDBManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AD645D01EC7F8E2008506BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD645E51EC7F8E2008506BB /* LaunchScreen.storyboard in Resources */,
+				3AD645E21EC7F8E2008506BB /* Assets.xcassets in Resources */,
+				3AD645E01EC7F8E2008506BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD645E91EC7F8E3008506BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD645F41EC7F8E3008506BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AD645CE1EC7F8E2008506BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD645DD1EC7F8E2008506BB /* ViewController.m in Sources */,
+				3AD645DA1EC7F8E2008506BB /* AppDelegate.m in Sources */,
+				3AD645D71EC7F8E2008506BB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD645E71EC7F8E3008506BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD645F01EC7F8E3008506BB /* FYPDBManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD645F21EC7F8E3008506BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD645FB1EC7F8E3008506BB /* FYPDBManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AD645ED1EC7F8E3008506BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AD645D11EC7F8E2008506BB /* FYPDBManager */;
+			targetProxy = 3AD645EC1EC7F8E3008506BB /* PBXContainerItemProxy */;
+		};
+		3AD645F81EC7F8E3008506BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AD645D11EC7F8E2008506BB /* FYPDBManager */;
+			targetProxy = 3AD645F71EC7F8E3008506BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AD645DE1EC7F8E2008506BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD645DF1EC7F8E2008506BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AD645E31EC7F8E2008506BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD645E41EC7F8E2008506BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AD645FD1EC7F8E3008506BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3AD645FE1EC7F8E3008506BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AD646001EC7F8E3008506BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FYPDBManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FYP.FYPDBManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AD646011EC7F8E3008506BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FYPDBManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FYP.FYPDBManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3AD646031EC7F8E3008506BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FYPDBManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FYP.FYPDBManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYPDBManager.app/FYPDBManager";
+			};
+			name = Debug;
+		};
+		3AD646041EC7F8E3008506BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FYPDBManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FYP.FYPDBManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYPDBManager.app/FYPDBManager";
+			};
+			name = Release;
+		};
+		3AD646061EC7F8E3008506BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FYPDBManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FYP.FYPDBManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FYPDBManager;
+			};
+			name = Debug;
+		};
+		3AD646071EC7F8E3008506BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FYPDBManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FYP.FYPDBManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FYPDBManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AD645CD1EC7F8E2008506BB /* Build configuration list for PBXProject "FYPDBManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD645FD1EC7F8E3008506BB /* Debug */,
+				3AD645FE1EC7F8E3008506BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AD645FF1EC7F8E3008506BB /* Build configuration list for PBXNativeTarget "FYPDBManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD646001EC7F8E3008506BB /* Debug */,
+				3AD646011EC7F8E3008506BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3AD646021EC7F8E3008506BB /* Build configuration list for PBXNativeTarget "FYPDBManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD646031EC7F8E3008506BB /* Debug */,
+				3AD646041EC7F8E3008506BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3AD646051EC7F8E3008506BB /* Build configuration list for PBXNativeTarget "FYPDBManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD646061EC7F8E3008506BB /* Debug */,
+				3AD646071EC7F8E3008506BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AD645CA1EC7F8E2008506BB /* Project object */;
+}
