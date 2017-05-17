@@ -7,6 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "FYPDBManager.h"
+
+
+/// Document dir
+#define APP_PATH_DOCUMENT	 [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+/// 本地主数据库名称
+#define LOCAL_MAIN_DB_NAME      @"fypdb.sqlite"
+/// 本地主数据库完整路径
+#define LOCAL_MAIN_DB_PATH      [APP_PATH_DOCUMENT stringByAppendingPathComponent:LOCAL_MAIN_DB_NAME]
 
 @interface AppDelegate ()
 
@@ -17,6 +26,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    BOOL checkResult = [[FYPDBManager sharedFYPDBBase] checkDatabase:LOCAL_MAIN_DB_PATH lastVersion:[FYPDBManager sharedFYPDBBase].dbVersion];
+    if (!checkResult) {
+        NSLog(@"check db fail.");
+        
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                            message:@"数据库初始化失败，不能继续加载，请彻底关闭程序后再次尝试，或者联系系统管理员。"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"确定"
+                                                  otherButtonTitles:nil, nil];
+        [alertview show];
+        return NO;
+    }
+    else {
+        NSLog(@"check db success.");
+    }
+
+    
+    
     return YES;
 }
 
