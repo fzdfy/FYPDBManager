@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0416CB1ECE914C0010A422 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0416CA1ECE914C0010A422 /* User.m */; };
 		3AD645D71EC7F8E2008506BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD645D61EC7F8E2008506BB /* main.m */; };
 		3AD645DA1EC7F8E2008506BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD645D91EC7F8E2008506BB /* AppDelegate.m */; };
 		3AD645DD1EC7F8E2008506BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD645DC1EC7F8E2008506BB /* ViewController.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A0416C91ECE914C0010A422 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3A0416CA1ECE914C0010A422 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		3AD645D21EC7F8E2008506BB /* FYPDBManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPDBManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD645D61EC7F8E2008506BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AD645D81EC7F8E2008506BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0416C71ECE91190010A422 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				3AD646301ECACD55008506BB /* FYPDBManager.h */,
+				3AD646311ECACD55008506BB /* FYPDBManager.m */,
+				3AD646341ECAE262008506BB /* FYPDBBase */,
+				3AD646181ECAA9CA008506BB /* FMDB */,
+			);
+			name = DBManager;
+			sourceTree = "<group>";
+		};
+		3A0416C81ECE91350010A422 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3A0416C91ECE914C0010A422 /* User.h */,
+				3A0416CA1ECE914C0010A422 /* User.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		3AD645C91EC7F8E2008506BB = {
 			isa = PBXGroup;
 			children = (
@@ -128,8 +151,8 @@
 		3AD645D41EC7F8E2008506BB /* FYPDBManager */ = {
 			isa = PBXGroup;
 			children = (
-				3AD646341ECAE262008506BB /* FYPDBBase */,
-				3AD646181ECAA9CA008506BB /* FMDB */,
+				3A0416C81ECE91350010A422 /* User */,
+				3A0416C71ECE91190010A422 /* DBManager */,
 				3AD645D81EC7F8E2008506BB /* AppDelegate.h */,
 				3AD645D91EC7F8E2008506BB /* AppDelegate.m */,
 				3AD645DB1EC7F8E2008506BB /* ViewController.h */,
@@ -139,8 +162,6 @@
 				3AD645E31EC7F8E2008506BB /* LaunchScreen.storyboard */,
 				3AD645E61EC7F8E2008506BB /* Info.plist */,
 				3AD645D51EC7F8E2008506BB /* Supporting Files */,
-				3AD646301ECACD55008506BB /* FYPDBManager.h */,
-				3AD646311ECACD55008506BB /* FYPDBManager.m */,
 			);
 			path = FYPDBManager;
 			sourceTree = "<group>";
@@ -346,6 +367,7 @@
 				3AD645DA1EC7F8E2008506BB /* AppDelegate.m in Sources */,
 				3AD646271ECAA9D8008506BB /* FMDatabaseQueue.m in Sources */,
 				3AD645D71EC7F8E2008506BB /* main.m in Sources */,
+				3A0416CB1ECE914C0010A422 /* User.m in Sources */,
 				3AD646241ECAA9D8008506BB /* FMDatabase.m in Sources */,
 				3AD646371ECAE28D008506BB /* FYPDBBase.m in Sources */,
 				3AD646281ECAA9D8008506BB /* FMResultSet.m in Sources */,

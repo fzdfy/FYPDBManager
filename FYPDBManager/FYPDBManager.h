@@ -12,6 +12,7 @@
 //最新版本号
 #define DBVERSION  1
 
+@class User;
 @interface FYPDBManager : FYPDBBase
 
 
@@ -19,11 +20,17 @@
 @property (nonatomic, readonly, assign) int dbVersion;
 
 /**
- @brief 插入消息数据
+ @brief 插入用户数据
  */
-- (void)insertMessage:(NSDictionary *)message;
+- (void)insertUser:(User *)user;
+
 /**
- 获取所有数据
+ 获取所有用户数据
  */
-- (NSArray<NSDictionary *> *)getAllMessage;
+- (NSArray<User *> *)getAllUser;
+
+/**
+  根据userID删除用户数据
+ */
+- (void)deleteUserForUserID:(NSString *)userID;
 @end

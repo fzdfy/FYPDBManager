@@ -23,6 +23,4 @@ singleton_h(FYPDBBase)
 /** 升级数据库 */
 - (BOOL)onUpgrade:(FMDatabase *)db oldVersion:(int)oldVersion lastVersion:(int)lastVersion;
 
-/** 事务操作 */
--(void)inTransaction:(BOOL (^_Nonnull)())block;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "FYPDBManager.h"
+#import "User.h"
 
 @interface FYPDBManager ()
 
@@ -14,65 +15,70 @@
 @end
 
 @implementation FYPDBManager
-singleton_m(FYPDBManager)
-
-
 
 #pragma mark - 业务逻辑
 
 /**
- @brief 插入消息数据
+ @brief 插入用户数据
  */
-- (void)insertMessage:(NSDictionary *)message{
-    [self inTransaction:^BOOL{
+- (void)insertUser:(User *)user{
+    
         if ([self.db open]) {
-
-            BOOL result = [self.db executeUpdate:@"INSERT INTO t_Users (UserId,LoginId,loginPassword,UserName,Age,Title) VALUES (?,?,?,?,?,?);",message[@"UserId"],message[@"LoginId"],message[@"loginPassword"],message[@"UserName"],message[@"Age"],message[@"Title"]];
+            
+            BOOL result = [self.db executeUpdate:@"INSERT INTO t_Users (UserID,LoginID,loginPassword,UserName,Age,Title) VALUES (?,?,?,?,?,?);",user.UserID,user.LoginID,user.loginPassword,user.UserName,user.Age,user.Title];
             if (result)
             {
                 NSLog(@"插入消息成功");
             }
             [self.db close];
-            return result;
         }
-        return NO;
- 
-    }];
-    
 }
 
 /**
- 获取所有消息
+ 根据userID删除用户数据
+ 
+ @param userID 用户ID
+ */
+- (void)deleteUserForUserID:(NSString *)userID
+{
+    if ([self.db open]) {
+        BOOL result = [self.db executeUpdate:@"delete from t_Users where userID = ?", userID];
+        if (result)
+        {
+            NSLog(@"删除消息成功");
+        }
+        [self.db close];
+    }
+}
+
+
+/**
+ 获取所有用户数据
  *
  *
  */
-- (NSArray<NSDictionary *> *)getAllMessage {
+- (NSArray<User *> *)getAllUser {
     
-    __block NSMutableArray *messages = [NSMutableArray arrayWithCapacity:0];
-    [self inTransaction:^BOOL{
-        if ([self.db open]) {
+     NSMutableArray *userList = [NSMutableArray arrayWithCapacity:0];
 
-            FMResultSet *result = [self.db executeQuery:@"select * from t_Users ;"];
-            while ([result next]) {
-                
-                 NSDictionary *user = @{@"UserId":[result stringForColumn:@"UserId"],
-                                        @"LoginId":[result stringForColumn:@"LoginId"],
-                                        @"loginPassword":[result stringForColumn:@"loginPassword"],
-                                        @"UserName":[result stringForColumn:@"UserName"],
-                                        @"Age":[result stringForColumn:@"Age"],
-                                        @"Title":[result stringForColumn:@"Title"]};
-                
-
-                [messages addObject:user];
-            }
-            [self.db close];
-            return YES;
+    if ([self.db open]) {
+        
+        FMResultSet *result = [self.db executeQuery:@"select * from t_Users"];
+        while ([result next]) {
+            
+            NSDictionary *user = @{@"UserID":[result stringForColumn:@"UserID"],
+                                   @"LoginID":[result stringForColumn:@"LoginID"],
+                                   @"loginPassword":[result stringForColumn:@"loginPassword"],
+                                   @"UserName":[result stringForColumn:@"UserName"],
+                                   @"Age":[NSNumber numberWithInt:[result intForColumn:@"Age"]],
+                                   @"Title":[result stringForColumn:@"Title"]};
+            
+            [userList addObject:[User feedWithDictionary:user]];
         }
-        return NO;
-    }];
-    return messages;
+        [self.db close];
+    }
+    return userList;
 }
-
 
 #pragma mark - Custom Property
 
@@ -114,7 +120,7 @@ singleton_m(FYPDBManager)
         
         // 2 执行表创建工作
         // 2.1 用户表
-        result = [db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_Users (UserId TEXT NOT NULL, LoginId TEXT NOT NULL, loginPassword TEXT, UserName TEXT, Age INTEGER, Title TEXT, PRIMARY KEY (UserId));"];
+        result = [db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_Users (UserID TEXT NOT NULL, LoginID TEXT NOT NULL, loginPassword TEXT, UserName TEXT, Age INTEGER, Title TEXT, PRIMARY KEY (UserId));"];
         if (!result) {
             NSLog(@"create table Users Failed");
             return false;

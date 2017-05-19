@@ -11,56 +11,11 @@
 
 @interface FYPDBBase ()
 
-
-@property (nonatomic, assign) BOOL inTransaction;
 @end
-
-
 
 @implementation FYPDBBase
 singleton_m(FYPDBBase)
 
-
-//事务操作
--(void)inTransaction:(BOOL (^_Nonnull)())block{
-    NSAssert(block, @"block is nil!");
-    [self executeDB:^(FMDatabase * _Nonnull db) {
-        _inTransaction = db.inTransaction;
-        if (!_inTransaction) {
-            _inTransaction = [db beginTransaction];
-        }
-        BOOL isCommit = NO;
-        isCommit = block();
-        if (_inTransaction){
-            if (isCommit) {
-                [db commit];
-            }else {
-                [db rollback];
-            }
-            _inTransaction = NO;
-        }
-    }];
-}
-/**
- 为了对象层的事物操作而封装的函数.
- */
--(void)executeDB:(void (^_Nonnull)(FMDatabase *_Nonnull db))block{
-    NSAssert(block, @"block is nil!");
-    //[self.threadLock lock];//加锁
-    
-    if (_db){//为了事务操作防止死锁而设置.
-        block(_db);
-        return;
-    }
-    __weak typeof(self) BGSelf = self;
-    [self.queue inDatabase:^(FMDatabase *db) {
-        BGSelf.db = db;
-        block(db);
-        BGSelf.db = nil;
-    }];
-    
-    //[self.threadLock unlock];//解锁
-}
 /**
  检查数据库
  
@@ -177,4 +132,5 @@ singleton_m(FYPDBBase)
 - (BOOL)onUpgrade:(FMDatabase *)db oldVersion:(int)oldVersion lastVersion:(int)lastVersion {
     return YES;
 }
+
 @end
